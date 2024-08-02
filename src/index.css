@@ -1,13 +1,84 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
+.whole .display {
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  width: 300px;
+  height: 150px;
+  background-color: rgb(224, 234, 210);
+  margin: 20px auto 20px auto;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 50px;
+  box-shadow: 5px 5px 13px rgb(187, 183, 183);
+  animation: shadows 1s infinite ;
+
+}
+.controls button {
+  /* margin-top: 50px; */
+  margin-left: 3px;
+  margin-right: 3px;
+  width: 100px;
+  height: 50px;
+  background-color: rgb(226, 230, 227);
+  box-shadow:  5px 5px 13px rgb(197, 197, 197);
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+  color: rgb(25, 126, 203);
+}
+.controls button:hover {
+  color: red;
+  transform: scale(1.2);
+
+}
+@keyframes shadows {
+  0% {
+    box-shadow:  4px 5px 10px rgb(252, 85, 2);
+  }
+  100% {
+    box-shadow:  8px 8px 20px rgb(246, 255, 0);
+  }
+
+
+}
+.clock .display {
+  background-color: rgb(238, 200, 179);
+  box-shadow: 5px 5px 13px rgb(102, 101, 101);
+  width: 300px;
+  height: 150px;
+
+  margin: 50px auto 20px auto;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 50px;
+
+}
+.switches button {
+  background-color: beige;
+  box-shadow: inset 5px 5px 18px rgb(197, 197, 197);
+}
+.newClock {
+  width: 280px;
+  height: 150px;
+  background-color: rgb(201, 234, 223);
+  line-height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border: 20px solid;
+  border-image: linear-gradient(to right, rgb(241, 222, 222), rgb(221, 109, 109) 30%, green 60%, purple 100%);
+  border-image-slice: 1;
+  /* border-radius: 10%; */
+  margin-bottom: 100px;
+}
+.newClock h1 {
+  font-size: 50px;
+  font-weight: normal;
+
 }
